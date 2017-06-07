@@ -7,5 +7,6 @@ before_script:
   - go get -d ./...
 script:
   - govendor sync
+  - go get github.com/ethereum/go-ethereum
   - go build cmd/agent_main.go
   - go test ./...

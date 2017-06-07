@@ -7,6 +7,6 @@ before_script:
   - go get -d ./...
 script:
   - govendor sync
-  - go get github.com/ethereum/go-ethereum
+  - go get github.com/ethereum/go-ethereum #seems to have conflicts with govendor on travis ci
   - go build cmd/agent_main.go
   - go test ./...

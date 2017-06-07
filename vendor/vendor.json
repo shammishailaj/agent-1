@@ -1,0 +1,121 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "3kmR/waezxaQifvm+gkxeJ89M3g=",
+			"path": "github.com/btcsuite/btcd/btcec",
+			"revision": "3d0dfed40b879733f608af4a3e155b9086db5368",
+			"revisionTime": "2017-05-30T14:59:51Z"
+		},
+		{
+			"checksumSHA1": "esNPrYEZsoeWOS3Lg+YB3SuvKr0=",
+			"path": "github.com/ethereum/go-ethereum",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "/Y/IvLkd3hSX1h3PDMHkkCBwK+4=",
+			"path": "github.com/ethereum/go-ethereum/common",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "NIN7nslnw4fUJlVcuxf5anvxAKQ=",
+			"path": "github.com/ethereum/go-ethereum/common/hexutil",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "2wSfa0pklHZ5ty52XuJOtZFIQfQ=",
+			"path": "github.com/ethereum/go-ethereum/common/math",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "fpgH1s7TVi8r0gMAQbdwYCO635M=",
+			"path": "github.com/ethereum/go-ethereum/core/types",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "rofYNlEqnMen5Lg1N2+VcihuaIU=",
+			"path": "github.com/ethereum/go-ethereum/crypto",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "VsqOiLFDRSDa67wPeqlxKJmE0XE=",
+			"path": "github.com/ethereum/go-ethereum/crypto/secp256k1",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "yunX3AjO6JiMz0NSY/krvG3VWsk=",
+			"path": "github.com/ethereum/go-ethereum/crypto/sha3",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "NbRntdNRuwam0wGGNJ6HrR83P0M=",
+			"path": "github.com/ethereum/go-ethereum/log",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "dsD/vq8IdIgaiJJTfRnwKjF35oE=",
+			"path": "github.com/ethereum/go-ethereum/params",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "ERaBPyDJCbMQRJsR6Kpqkr7dqfg=",
+			"path": "github.com/ethereum/go-ethereum/rlp",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "j1QluMBF4VhPg6Jmxh16Q6RyF0Q=",
+			"path": "github.com/ethereum/go-ethereum/trie",
+			"revision": "80f7c6c2996ad47f70a5070c400b1fd87a20c59c",
+			"revisionTime": "2017-06-07T15:09:08Z"
+		},
+		{
+			"checksumSHA1": "VcLNrvCcnZuSnebTxMRyNtzY3ZY=",
+			"path": "github.com/go-stack/stack",
+			"revision": "7a2f19628aabfe68f0766b59e74d6315f8347d22",
+			"revisionTime": "2017-05-04T03:43:18Z"
+		},
+		{
+			"checksumSHA1": "iFa/JK4EPxLqkHi7wHC2PgFOptw=",
+			"path": "github.com/kouhin/envflag",
+			"revision": "0e9a8606164937a324853295ffa8e9803372e765",
+			"revisionTime": "2015-08-18T17:43:21Z"
+		},
+		{
+			"checksumSHA1": "KAzbLjI9MzW2tjfcAsK75lVRp6I=",
+			"path": "github.com/rcrowley/go-metrics",
+			"revision": "1f30fe9094a513ce4c700b9a54458bbb0c96996c",
+			"revisionTime": "2016-11-28T21:05:44Z"
+		},
+		{
+			"checksumSHA1": "CJAtiWwracZWLccrLxUnHUcKIrc=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "68cec9f21fbf3ea8d8f98c044bc6ce05f17b267a",
+			"revisionTime": "2017-06-06T20:59:45Z"
+		},
+		{
+			"checksumSHA1": "fSpQ1X/1tpkN80Ceba8KseGeVu8=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "b9e8d468b01f806830d387bd9a1fe96dc68129d1",
+			"revisionTime": "2017-06-07T10:07:34Z"
+		},
+		{
+			"checksumSHA1": "DQXNV0EivoHm4q+bkdahYXrjjfE=",
+			"path": "gopkg.in/karalabe/cookiejar.v2/collections/prque",
+			"revision": "8dcd6a7f4951f6ff3ee9cbb919a06d8925822e57",
+			"revisionTime": "2015-07-24T13:16:13Z"
+		}
+	],
+	"rootPath": "github.com/opscoin/agent"
+}

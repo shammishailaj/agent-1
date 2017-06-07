@@ -9,6 +9,14 @@
 			"revisionTime": "2017-05-30T14:59:51Z"
 		},
 		{
+			"path": "github.com/ethereum/go-ethereum/crypto^",
+			"revision": ""
+		},
+		{
+			"path": "github.com/ethereum/go-ethereum^",
+			"revision": ""
+		},
+		{
 			"checksumSHA1": "VcLNrvCcnZuSnebTxMRyNtzY3ZY=",
 			"path": "github.com/go-stack/stack",
 			"revision": "7a2f19628aabfe68f0766b59e74d6315f8347d22",

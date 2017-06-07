@@ -2,16 +2,18 @@ package main
 
 import (
 	"flag"
-	"fmt"
+	"io/ioutil"
 	"math/big"
 	"os"
+	"strings"
+
+	"github.com/opscoin/agent/authorized_keys"
+	"github.com/opscoin/agent/eth"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/kouhin/envflag"
 	log "github.com/sirupsen/logrus"
-
-	"github.com/opscoin/agent/eth"
 )
 
 var (
@@ -42,8 +44,8 @@ func main() {
 	network := flag.String("network_name", "main", "override to use the testnetwork, i.e test or main")
 	logLevel := flag.String("log_level", "debug", "log level")
 	contractAddress := flag.String("contract_address", "", "Address where to find your contract that stores ssh keys")
+	keyFile := flag.String("key_file", "/root/.ssh/authorized_keys", "Disk location of authorized keys file")
 
-	//	flag.Parse()
 	envflag.Parse()
 
 	setLogLevel(*logLevel)
@@ -65,13 +67,33 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to instantiate a Token contract: %v", err)
 	}
-	for i := 0; i < 10; i++ {
+	var keys []string
+	for i := 0; i < 100; i++ {
 		name, err := token.SshPublicKeys(nil, big.NewInt(int64(i)))
 		if err != nil {
-			fmt.Printf("Failed to retrieve token name: %v \n", err)
-			continue
+			if strings.Index(err.Error(), "unmarshalling empty output") == -1 {
+				log.Errorf("Failed to retrieve token name: %s \n", err.Error())
+			}
+			break
 		}
-
-		fmt.Printf("original(%d): %o\n", len(name), []byte(name))
+		keys = append(keys, name)
+		log.Debug("original(%d) %s\n", len(name), name)
 	}
+
+	//Read text from keys file
+	b, err := ioutil.ReadFile(*keyFile) // just pass the file name
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	output, err := authorized_keys.AddKeysToFile(string(b), keys)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	err = ioutil.WriteFile(*keyFile, []byte(output), 0600)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Info("Completed. Exiting")
 }

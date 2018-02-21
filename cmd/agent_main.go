@@ -17,8 +17,8 @@ import (
 )
 
 var (
-	TESTNET = "https://ropsten.infura.io/Bd64GbsMs0gTlYpHNPC0"
-	MAINNET = "https://mainnet.infura.io/Bd64GbsMs0gTlYpHNPC0"
+	TESTNET = "https://ropsten.infura.io/INSERT_TEST_NET_HERE"
+	MAINNET = "https://mainnet.infura.io/INSERT_MAIN_NET_HERE"
 )
 
 func setLogLevel(logLevel string) {
